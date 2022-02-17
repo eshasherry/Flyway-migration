@@ -1,0 +1,1 @@
+ALTER TABLE `service_settings` CHANGE COLUMN `key` `key` VARCHAR(255) CHARACTER SET 'utf8' COLLATE 'utf8_bin' NOT NULL DEFAULT ''  ;

@@ -1,0 +1,435 @@
+DELETE FROM `service_definitions` WHERE service_tp_id='ddi' AND service_id='grady_customer_service';
+DELETE FROM `service_texts` WHERE service_tp_id='ddi' AND service_id='grady_customer_service';
+DELETE FROM `service_mappings` WHERE package_id='ddi_api' AND service_tp_id='ddi' AND service_id='grady_customer_service';
+DELETE FROM `service_definitions` WHERE service_tp_id='ddi' AND service_id='grady_patient_service';
+DELETE FROM `service_texts` WHERE service_tp_id='ddi' AND service_id='grady_patient_service';
+DELETE FROM `service_mappings` WHERE package_id='ddi_api' AND service_tp_id='ddi' AND service_id='grady_patient_service';
+
+INSERT INTO `service_definitions` (
+   `service_tp_id`
+  ,`service_id`
+  ,`service_category_id`
+  ,`repeatable`
+  ,`vendor_service_id`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'ddi'
+  ,'grady_customer_service_sample'
+  ,'assessment'
+  ,0
+  ,'747f5b10-e777-47ff-acec-259ad3c18808'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_patient_service_sample'
+  ,'assessment'
+  ,0
+  ,'85b12d21-8362-4b6b-bb47-19fa75ef9dd9'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_nursing'
+  ,'assessment'
+  ,0
+  ,'e65621b5-1e90-4e72-b04c-b21b91b46fa0'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_support_service'
+  ,'assessment'
+  ,0
+  ,'df8b7c80-2b5f-4e5a-95fa-94b3d6820cf6'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_patient_customer_service'
+  ,'assessment'
+  ,0
+  ,'9aa35746-adc5-4e2b-9959-671833e2765a'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_non_clinical_professional'
+  ,'assessment'
+  ,0
+  ,'73b65eed-e921-4269-9668-28d2b1286b4f'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_clinical_professional'
+  ,'assessment'
+  ,0
+  ,'cd194405-3305-4d4d-8fc7-24a5e0b23dce'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_leadership'
+  ,'assessment'
+  ,0
+  ,'a6f28f82-599b-4860-a63f-8499ca81acf2'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+
+INSERT INTO `service_texts` (
+   `service_tp_id`
+  ,`service_id`
+  ,`client_group_id`
+  ,`client_user_id`
+  ,`language`
+  ,`service_name`
+  ,`service_diz`
+  ,`instructions_widget`
+  ,`instructions_candidate`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'ddi'
+  ,'grady_customer_service_sample'
+  ,''
+  ,''
+  ,'en'
+  ,'Customer Service Career Battery (Test System Only)'
+  ,''
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_patient_service_sample'
+  ,''
+  ,''
+  ,'en'
+  ,'Patient Service Career Battery (Test System Only)'
+  ,''
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_nursing'
+  ,''
+  ,''
+  ,'en'
+  ,'Nursing Assessment'
+  ,''
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_support_service'
+  ,''
+  ,''
+  ,'en'
+  ,'Support Service Assessment'
+  ,''
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_patient_customer_service'
+  ,''
+  ,''
+  ,'en'
+  ,'Patient/Customer Service Assessment'
+  ,''
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_non_clinical_professional'
+  ,''
+  ,''
+  ,'en'
+  ,'Non-Clinical Professional Assessment'
+  ,''
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_clinical_professional'
+  ,''
+  ,''
+  ,'en'
+  ,'Clinical Professional Assessment'
+  ,''
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi'
+  ,'grady_leadership'
+  ,''
+  ,''
+  ,'en'
+  ,'Leadership Assessment'
+  ,''
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+
+INSERT INTO `service_mappings` (
+   `package_id`
+  ,`service_tp_id`
+  ,`service_id`
+  ,`client_group_id`
+  ,`client_user_id`
+  ,`service_select`
+  ,`service_display`
+  ,`enabled`
+  ,`service_group`
+  ,`service_order`
+  ,`result_validity_days`
+  ,`order_validity_days`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'ddi_api'
+  ,'ddi'
+  ,'grady_customer_service_sample'
+  ,''
+  ,''
+  ,0
+  ,1
+  ,1
+  ,200
+  ,100
+  ,180
+  ,7
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi_api'
+  ,'ddi'
+  ,'grady_patient_service_sample'
+  ,''
+  ,''
+  ,0
+  ,1
+  ,1
+  ,200
+  ,110
+  ,180
+  ,7
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi_api'
+  ,'ddi'
+  ,'grady_nursing'
+  ,''
+  ,''
+  ,0
+  ,1
+  ,1
+  ,200
+  ,200
+  ,180
+  ,7
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi_api'
+  ,'ddi'
+  ,'grady_support_service'
+  ,''
+  ,''
+  ,0
+  ,1
+  ,1
+  ,200
+  ,210
+  ,180
+  ,7
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi_api'
+  ,'ddi'
+  ,'grady_patient_customer_service'
+  ,''
+  ,''
+  ,0
+  ,1
+  ,1
+  ,200
+  ,220
+  ,180
+  ,7
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi_api'
+  ,'ddi'
+  ,'grady_non_clinical_professional'
+  ,''
+  ,''
+  ,0
+  ,1
+  ,1
+  ,200
+  ,230
+  ,180
+  ,7
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi_api'
+  ,'ddi'
+  ,'grady_clinical_professional'
+  ,''
+  ,''
+  ,0
+  ,1
+  ,1
+  ,200
+  ,240
+  ,180
+  ,7
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ddi_api'
+  ,'ddi'
+  ,'grady_leadership'
+  ,''
+  ,''
+  ,0
+  ,1
+  ,1
+  ,200
+  ,250
+  ,180
+  ,7
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);

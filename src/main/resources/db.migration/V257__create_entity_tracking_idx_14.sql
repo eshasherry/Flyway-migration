@@ -1,0 +1,1 @@
+CREATE INDEX entity_tracking_idx_14 ON entity_tracking (scope) ALGORITHM=INPLACE LOCK=NONE;

@@ -1,0 +1,1 @@
+alter table `entity_tracking` modify `external_id` VARCHAR(255);

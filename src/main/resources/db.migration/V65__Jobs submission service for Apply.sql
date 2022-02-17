@@ -1,0 +1,406 @@
+INSERT INTO `service_definitions` (
+   `service_tp_id`
+  ,`service_id`
+  ,`service_category_id`
+  ,`repeatable`
+  ,`vendor_service_id`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'ttc_apply'
+  ,'transform_jobs'
+  ,'_core'
+  ,0
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+
+INSERT INTO `service_texts` (
+   `service_tp_id`
+  ,`service_id`
+  ,`client_group_id`
+  ,`client_user_id`
+  ,`language`
+  ,`service_name`
+  ,`service_diz`
+  ,`instructions_widget`
+  ,`instructions_candidate`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'ttc_apply'
+  ,'transform_jobs'
+  ,''
+  ,''
+  ,'en'
+  ,'Jobs Submission Service'
+  ,''
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+
+INSERT INTO `package_definitions` (
+   `package_id`
+  ,`owning_service_tp_id`
+  ,`vendor_package_ids`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'ttc_apply_api'
+  ,'ttc_verify'
+  ,'{"":""}'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+INSERT INTO `service_mappings` (
+   `package_id`
+  ,`service_tp_id`
+  ,`service_id`
+  ,`client_group_id`
+  ,`client_user_id`
+  ,`service_select`
+  ,`service_display`
+  ,`enabled`
+  ,`service_group`
+  ,`service_order`
+  ,`result_validity_days`
+  ,`order_validity_days`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'ttc_apply_api'
+  ,'ttc_apply'
+  ,'transform_jobs'
+  ,''
+  ,''
+  ,0
+  ,1
+  ,1
+  ,200
+  ,100
+  ,-1
+  ,-1
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+
+
+INSERT INTO `field_mappings` (
+   `service_tp_id`
+  ,`service_id`
+  ,`field_id`
+  ,`client_group_id`
+  ,`client_user_id`
+  ,`field_state`
+  ,`field_display`
+  ,`field_sensitivity`
+  ,`field_cp_state`
+  ,`field_cp_display`
+  ,`field_cp_sensitivity`
+  ,`enabled`
+  ,`field_group`
+  ,`field_order`
+  ,`field_default`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'ttc_apply'
+  ,'transform_jobs'
+  ,'source_attachment_id'
+  ,''
+  ,''
+  ,1
+  ,0
+  ,1
+  ,1
+  ,0
+  ,1
+  ,1
+  ,400
+  ,100
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ttc_apply'
+  ,'transform_jobs'
+  ,'variable_name'
+  ,''
+  ,''
+  ,1
+  ,0
+  ,1
+  ,1
+  ,0
+  ,1
+  ,1
+  ,400
+  ,100
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ttc_apply'
+  ,'transform_jobs'
+  ,'variable_value'
+  ,''
+  ,''
+  ,1
+  ,0
+  ,1
+  ,1
+  ,0
+  ,1
+  ,1
+  ,400
+  ,100
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ttc_apply'
+  ,'transform_jobs'
+  ,'job_system_id'
+  ,''
+  ,''
+  ,1
+  ,0
+  ,1
+  ,1
+  ,0
+  ,1
+  ,1
+  ,400
+  ,100
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ttc_apply'
+  ,'transform_jobs'
+  ,'action'
+  ,''
+  ,''
+  ,1
+  ,0
+  ,1
+  ,1
+  ,0
+  ,1
+  ,1
+  ,400
+  ,100
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+INSERT INTO `package_mappings` (
+		   `package_id`
+		  ,`client_group_id`
+		  ,`client_user_id`
+		  ,`package_select`
+		  ,`package_display`
+		  ,`enabled`
+		  ,`package_group`
+		  ,`package_order`
+		  ,`created_date`
+		  ,`created_tp_id`
+		  ,`created_tp_user_id`
+		  ,`updated_date`
+		  ,`updated_tp_id`
+		  ,`updated_tp_user_id`
+		) VALUES (
+		   'ttc_apply_api'
+		  ,'test_client_ttc'
+		  ,''
+		  ,2
+		  ,0
+		  ,1
+		  ,100
+		  ,50
+		  ,NOW()
+		  ,'ttc_verify'
+		  ,'ttc_verify'
+		  ,NOW()
+		  ,'ttc_verify'
+		  ,'ttc_verify'
+		);
+		
+INSERT INTO `service_settings`
+(`service_tp_id`,
+`client_group_id`,
+`client_user_id`,
+`key`,
+`value`,
+`created_date`,
+`created_tp_id`,
+`created_tp_user_id`,
+`updated_date`,
+`updated_tp_id`,
+`updated_tp_user_id`)
+VALUES
+(
+'ttc_apply',
+'test_client_ttc',
+'',
+'XSLT_transform_jobs|ttc_verify|ADD|',
+'/artifacts/jobadd.xslt'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+'ttc_apply',
+'test_client_ttc',
+'',
+'XSLT_transform_jobs|ttc_verify|DEL|',
+'/artifacts/jobdelete.xslt'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+INSERT INTO `field_definitions`
+(`field_id`,
+`field_level`,
+`field_type`,
+`field_size`,
+`regex_check`,
+`vendor_field_id`,
+`created_date`,
+`created_tp_id`,
+`created_tp_user_id`,
+`updated_date`,
+`updated_tp_id`,
+`updated_tp_user_id`)
+VALUES
+(
+'source_attachment_id',
+4,
+0,
+0,
+'',
+'',
+NOW(),
+'ttc_verify',
+'ttc_verify',
+NOW(),
+'ttc_verify',
+'ttc_verify'
+),(
+'variable_name',
+4,
+0,
+0,
+'',
+'',
+NOW(),
+'ttc_verify',
+'ttc_verify',
+NOW(),
+'ttc_verify',
+'ttc_verify'
+),(
+'variable_value',
+4,
+0,
+0,
+'',
+'',
+NOW(),
+'ttc_verify',
+'ttc_verify',
+NOW(),
+'ttc_verify',
+'ttc_verify'
+),(
+'job_system_id',
+4,
+0,
+0,
+'',
+'',
+NOW(),
+'ttc_verify',
+'ttc_verify',
+NOW(),
+'ttc_verify',
+'ttc_verify'
+),(
+'action',
+4,
+0,
+0,
+'',
+'',
+NOW(),
+'ttc_verify',
+'ttc_verify',
+NOW(),
+'ttc_verify',
+'ttc_verify'
+);
+

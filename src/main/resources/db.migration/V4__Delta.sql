@@ -1,0 +1,15 @@
+CREATE  TABLE `delta` (
+  `id` VARCHAR(45) NOT NULL ,
+  `created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_user` VARCHAR(45) NOT NULL ,
+  `content` MEDIUMTEXT NULL ,
+  `ready` TINYINT UNSIGNED NULL DEFAULT 0,
+  `description` VARCHAR(125) NULL DEFAULT '',
+  PRIMARY KEY (`id`) );
+
+ CREATE  TABLE `installed_delta` (
+  `id` VARCHAR(45) NOT NULL ,
+  `installed` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `content` MEDIUMTEXT NULL ,
+  `origin` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`id`) );

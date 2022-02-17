@@ -1,0 +1,1 @@
+ALTER TABLE `q_processing` ADD COLUMN `order_expiry_date` TIMESTAMP NULL DEFAULT NULL  AFTER `original_txn_id` , ADD COLUMN `order_expiry_processed` TINYINT(1) NOT NULL DEFAULT 0  AFTER `order_expiry_date` , CHANGE COLUMN `req_timedatestamp` `req_timedatestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP  ;

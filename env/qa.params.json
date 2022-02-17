@@ -1,0 +1,15 @@
+{
+  "ClusterStackName": "",
+  "Path": "/talemetryScriptsDeployer",
+  "AppName": "flyway-migration",
+  "ListenerPort" : "",
+  "AppDesiredCount": "1",
+  "Memory": "1024",
+  "Cpu": "1024",
+  "Environment" : "qa",
+  "JvmXmsMemory" : "1024",
+  "JvmXmxMemory" : "1024",
+  "KmsKey": "",
+  "MinimumHealthyPercent":"0",
+  "MaximumPercent":"100"
+}

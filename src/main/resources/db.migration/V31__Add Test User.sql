@@ -1,0 +1,4 @@
+insert into clients (client_group_id, clientname, createdDate, activatedDate, createdUser, createdTP, password, groupAuthAllowed, groupAuthAutoCreateUser, reviewCpSubmission, enabled, timezone, client_options, data_retention_days) values ('test_client_ttc', 'Talemetry Test Client', now(), now(), 'admin', 'HRNX AWACS', 'Jra5DJrGB6TiVgr6sKe6nb73IW8iO0EXWr6e/KXjWCWF2zWN2WanVXRuYK+YLizl', 1, 0, 0, 1, null, '', 365);
+insert into partner_service_mappings (service_tp_id, client_group_id, enabled, date_created, date_activated, service_id) values ('kenexa_assessments', 'test_client_ttc', 1, now(), now(), 'rbs_assessment');
+
+insert into settings_endpoints ( endpoint_category, partner_id, client_group_id, client_user_id, address, enabled) values ( 'createOrder', 'kenexa_assessments', 'test_client_ttc', null, 'http://qte5.psl.com/qte/system/pages/preCheck.asp', 1)

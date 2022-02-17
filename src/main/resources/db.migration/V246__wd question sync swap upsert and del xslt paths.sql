@@ -1,0 +1,2 @@
+update `xslt_versions` set `xslt_path` = "/artifacts/wd_default_question_export_upsert_agent.xslt" where `xslt_id` = "mirror_questions_wd_upsert";  
+update `xslt_versions` set `xslt_path` = "/artifacts/wd_default_question_export_del_agent.xslt" where `xslt_id` = "mirror_questions_wd_del";

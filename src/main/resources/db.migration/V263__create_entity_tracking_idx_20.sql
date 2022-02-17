@@ -1,0 +1,1 @@
+CREATE INDEX entity_tracking_idx_20 ON entity_tracking (email) ALGORITHM=INPLACE LOCK=NONE;

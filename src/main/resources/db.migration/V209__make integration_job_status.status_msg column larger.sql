@@ -1,0 +1,1 @@
+ALTER TABLE integration_job_status modify COLUMN status_msg TEXT;

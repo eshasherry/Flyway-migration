@@ -1,0 +1,1 @@
+CREATE INDEX entity_tracking_idx_17 ON entity_tracking (action) ALGORITHM=INPLACE LOCK=NONE;

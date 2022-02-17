@@ -1,0 +1,1 @@
+CREATE INDEX entity_tracking_idx_11 ON entity_tracking (txn_id) ALGORITHM=INPLACE LOCK=NONE;

@@ -1,0 +1,1 @@
+INSERT INTO `trading_partners` (`partner_id`, `password`,`partner_name`, `partner_type`, `enabled`) VALUES ('peoplesoft', 'fe4wagwwNLPTjseYqoZaqg5TAr1boujKvh4fJya2KMurwvflLsbitaVEM3yEq9di','Peoplesoft', 'ats', 1);

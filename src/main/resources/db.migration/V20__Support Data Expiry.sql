@@ -1,0 +1,2 @@
+ALTER TABLE `clients` ADD COLUMN `data_retention_days` SMALLINT UNSIGNED NULL DEFAULT 365  AFTER `eula_agreed_date` ;
+ALTER TABLE `q_processing` DROP INDEX `date`, ADD INDEX `date` (`req_timedatestamp` ASC, `client_group_id` ASC, `txn_id` ASC);

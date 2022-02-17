@@ -1,0 +1,1 @@
+CREATE INDEX entity_tracking_idx_13 ON entity_tracking (external_id) ALGORITHM=INPLACE LOCK=NONE;

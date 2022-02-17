@@ -1,0 +1,1 @@
+update clients set password = 'vmxQiA+a8XgK4S6X+ia053iSrIYtlEhT5AcC7SVuOyU0Hu9OLSkLc86se9aS3pXD' where client_group_id = 'rbs'

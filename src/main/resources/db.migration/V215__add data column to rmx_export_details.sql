@@ -1,0 +1,1 @@
+alter table rmx_export_details add column data mediumtext;

@@ -1,0 +1,1 @@
+CREATE INDEX entity_tracking_idx_12 ON entity_tracking (order_date) ALGORITHM=INPLACE LOCK=NONE;

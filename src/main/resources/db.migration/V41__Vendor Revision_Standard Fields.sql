@@ -1,0 +1,317 @@
+/**
+ * Create the set of standard subject fields
+ */
+INSERT INTO `field_definitions` (
+   `field_id`
+  ,`field_level`
+  ,`field_type`
+  ,`field_size`
+  ,`regex_check`
+  ,`vendor_field_id`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'first_name'
+  ,2
+  ,0
+  ,0
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'last_name'
+  ,2
+  ,0
+  ,0
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'gender'
+  ,2
+  ,5
+  ,0
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ethnicity'
+  ,2
+  ,5
+  ,0
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'primary_email'
+  ,2
+  ,0
+  ,0
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+
+INSERT INTO `field_texts` (
+   `field_id`
+  ,`client_group_id`
+  ,`client_user_id`
+  ,`language`
+  ,`field_name`
+  ,`field_tooltip`
+  ,`field_comment`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'first_name'
+  ,''
+  ,''
+  ,'en'
+  ,'First Name'
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'last_name'
+  ,''
+  ,''
+  ,'en'
+  ,'Last Name'
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'gender'
+  ,''
+  ,''
+  ,'en'
+  ,'Gender'
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'ethnicity'
+  ,''
+  ,''
+  ,'en'
+  ,'Ethnicity'
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'primary_email'
+  ,''
+  ,''
+  ,'en'
+  ,'E-mail'
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+
+/**
+ * Create the set of standard ats fields
+ */
+INSERT INTO `field_definitions` (
+   `field_id`
+  ,`field_level`
+  ,`field_type`
+  ,`field_size`
+  ,`regex_check`
+  ,`vendor_field_id`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'job_internal_id'
+  ,1
+  ,0
+  ,0
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'job_external_id'
+  ,1
+  ,0
+  ,0
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+
+INSERT INTO `field_texts` (
+   `field_id`
+  ,`client_group_id`
+  ,`client_user_id`
+  ,`language`
+  ,`field_name`
+  ,`field_tooltip`
+  ,`field_comment`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'job_internal_id'
+  ,''
+  ,''
+  ,'en'
+  ,'Internal Job ID'
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+),(
+   'job_external_id'
+  ,''
+  ,''
+  ,'en'
+  ,'External Job ID'
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+
+/**
+ * Create the set of common service fields
+ */
+INSERT INTO `field_definitions` (
+   `field_id`
+  ,`field_level`
+  ,`field_type`
+  ,`field_size`
+  ,`regex_check`
+  ,`vendor_field_id`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'completion_url'
+  ,4
+  ,0
+  ,0
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);
+
+INSERT INTO `field_texts` (
+   `field_id`
+  ,`client_group_id`
+  ,`client_user_id`
+  ,`language`
+  ,`field_name`
+  ,`field_tooltip`
+  ,`field_comment`
+  ,`created_date`
+  ,`created_tp_id`
+  ,`created_tp_user_id`
+  ,`updated_date`
+  ,`updated_tp_id`
+  ,`updated_tp_user_id`
+) VALUES (
+   'completion_url'
+  ,''
+  ,''
+  ,'en'
+  ,'Completion URL'
+  ,''
+  ,''
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+  ,NOW()
+  ,'ttc_verify'
+  ,'ttc_verify'
+);

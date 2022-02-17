@@ -1,0 +1,12 @@
+ALTER TABLE `q_incoming` CHANGE COLUMN `receipt_timedatestamp` `receipt_timedatestamp` TIMESTAMP NOT NULL  , CHANGE COLUMN `test_taken_timestamp` `test_taken_timestamp` TIMESTAMP NULL DEFAULT NULL  , CHANGE COLUMN `result_timestamp` `result_timestamp` TIMESTAMP NULL DEFAULT NULL  ;
+ALTER TABLE `q_processing` CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT  FIRST , CHANGE COLUMN `req_timedatestamp` `req_timedatestamp` TIMESTAMP NOT NULL  , CHANGE COLUMN `last_hrnx_attempt` `last_hrnx_attempt` TIMESTAMP NULL DEFAULT NULL  ;
+ALTER TABLE `q_sent` CHANGE COLUMN `req_timedatestamp` `req_timedatestamp` TIMESTAMP NOT NULL  ;
+ALTER TABLE `client_users` CHANGE COLUMN `eula_agreed_date` `eula_agreed_date` TIMESTAMP NULL DEFAULT NULL  ;
+ALTER TABLE `awacs_users` CHANGE COLUMN `last_login` `last_login` TIMESTAMP NULL DEFAULT NULL  ;
+ALTER TABLE `clients` CHANGE COLUMN `createdDate` `createdDate` TIMESTAMP NULL DEFAULT NULL  , CHANGE COLUMN `activatedDate` `activatedDate` TIMESTAMP NULL DEFAULT NULL  , CHANGE COLUMN `eula_agreed_date` `eula_agreed_date` TIMESTAMP NULL DEFAULT NULL  ;
+ALTER TABLE `eula` CHANGE COLUMN `eula_rev_date` `eula_rev_date` TIMESTAMP NOT NULL  ;
+ALTER TABLE `hrnx_error_stack` CHANGE COLUMN `error_timedatestamp` `error_timedatestamp` TIMESTAMP NOT NULL  ;
+ALTER TABLE `partner_service_mappings` CHANGE COLUMN `date_created` `date_created` TIMESTAMP NULL DEFAULT NULL  , CHANGE COLUMN `date_activated` `date_activated` TIMESTAMP NULL DEFAULT NULL  ;
+ALTER TABLE `q_email_outbox` CHANGE COLUMN `email_timedatestamp` `email_timedatestamp` TIMESTAMP NULL DEFAULT NULL  , CHANGE COLUMN `sent_timedatestamp` `sent_timedatestamp` TIMESTAMP NULL DEFAULT NULL  ;
+ALTER TABLE `tp_users` CHANGE COLUMN `awacs_createdDate` `awacs_createdDate` TIMESTAMP NULL DEFAULT NULL  ;
+ALTER TABLE `trading_partners` CHANGE COLUMN `date_started` `date_started` TIMESTAMP NULL DEFAULT NULL  ;
